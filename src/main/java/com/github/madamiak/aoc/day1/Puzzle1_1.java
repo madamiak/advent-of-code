@@ -12,23 +12,25 @@ public class Puzzle1_1 {
 	}
 
 	private static void move(Human human, String instruction) {
-		human.move(instruction.charAt(0), Integer.parseInt(instruction.substring(1, instruction.length())));
+		char turnDirection = instruction.charAt(0);
+		int blocks = Integer.parseInt(instruction.substring(1, instruction.length()));
+		human.move(turnDirection, blocks);
 	}
 
 	private static class Human {
 		private static final String CARDINAL_DIRECTIONS = "01230123";
 		private static final int[] MOVES = new int[4];
 
-		private int lastDir = 0;
+		private int facingDirection = 0;
 
 		void move(char turnDirection, int blocks) {
-			lastDir = getDirectionAfterTurning(turnDirection);
-			MOVES[lastDir] += blocks;
+			facingDirection = getDirectionAfterTurning(turnDirection);
+			MOVES[facingDirection] += blocks;
 		}
 
 		private int getDirectionAfterTurning(char turnDirection) {
 			int diff = turnDirection == 'R' ? 1 : 3;
-			return Character.getNumericValue(CARDINAL_DIRECTIONS.charAt(lastDir + diff));
+			return Character.getNumericValue(CARDINAL_DIRECTIONS.charAt(facingDirection + diff));
 		}
 
 		int getBlocksAwayFromStart() {
