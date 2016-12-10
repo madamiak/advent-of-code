@@ -23,5 +23,5 @@ class TestPuzzle0701(TestCase):
                                           "oxxo[asdfgh]zxcvbn"), 2)
 
     def test(self):
-        with open('Puzzle0701.txt', 'r') as puzzle:
+        with open('Puzzle07.txt', 'r') as puzzle:
             print Puzzle0701.solve(puzzle.read())
