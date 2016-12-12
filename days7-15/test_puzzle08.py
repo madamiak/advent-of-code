@@ -1,5 +1,5 @@
 from unittest import TestCase
-from puzzly08 import Puzzle08
+from puzzle08 import Puzzle08
 
 
 class TestPuzzle08(TestCase):
