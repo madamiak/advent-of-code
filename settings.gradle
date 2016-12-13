@@ -1,2 +1,3 @@
-rootProject.name = 'advent-of-code-1-6'
+rootProject.name = 'advent-of-code'
+include 'days1-6'
 

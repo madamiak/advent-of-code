@@ -108,7 +108,7 @@ public class Puzzle1_2 {
 		static List<Block> createMany(Block starting, int direction, int amount) {
 			List<Block> blocks = new ArrayList<>();
 			for (int i = 0; i < amount; i++) {
-				blocks.add(new Block(starting.x + dx, starting.y + dy));
+//				blocks.add(new Block(starting.x + dx, starting.y + dy));
 			}
 			return null;
 		}
