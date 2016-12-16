@@ -1,13 +1,13 @@
 from unittest import TestCase
 
-from puzzle1001 import Puzzle1001
+from puzzle10 import Puzzle10
 
 
-class TestPuzzle1001(TestCase):
+class TestPuzzle10(TestCase):
     pass
 
     def setUp(self):
-        self.test_object = Puzzle1001()
+        self.test_object = Puzzle10()
 
     def test_distribute_value(self):
         self.test_object.solve("value 5 goes to bot 2")

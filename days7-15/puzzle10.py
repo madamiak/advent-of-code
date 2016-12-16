@@ -1,7 +1,7 @@
 import re
 
 
-class Puzzle1001:
+class Puzzle10:
     def __init__(self):
         self.bots = {}
         self.value_dist_regex = r'value (\d+) goes to (bot \d+|output \d+)'
