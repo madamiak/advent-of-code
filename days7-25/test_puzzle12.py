@@ -32,3 +32,9 @@ class TestPuzzle12(TestCase):
         with open('Puzzle12.txt', 'r') as puzzle:
             self.test_object.solve(puzzle.read())
             print self.test_object.get_register('a')
+
+    def test_2(self):
+        with open('Puzzle12.txt', 'r') as puzzle:
+            self.test_object = Puzzle12({'a': 0, 'b': 0, 'c': 1, 'd': 0})
+            self.test_object.solve(puzzle.read())
+            print self.test_object.get_register('a')
