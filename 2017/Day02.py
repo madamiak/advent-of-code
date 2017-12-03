@@ -13,7 +13,7 @@ class ChecksumCalculator(object):
         for row in rows:
             row = sorted(list(map(lambda s: int(s), row)), reverse=True)
             for index, number in enumerate(row[:-1]):
-                for other_number in row[index+1:]:
+                for other_number in row[index + 1:]:
                     if number % other_number == 0:
                         result += number / other_number
         return result
