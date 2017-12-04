@@ -6,7 +6,7 @@ def same_words_count(word, words):
 
 
 def anagrams_count(word, words):
-    return sum([words.count(''.join(combination)) for combination in set(itertools.permutations(word))])
+    return sum([words.count(''.join(permutation)) for permutation in set(itertools.permutations(word))])
 
 
 class PassphraseValidator(object):
