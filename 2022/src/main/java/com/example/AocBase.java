@@ -22,7 +22,7 @@ public abstract class AocBase {
 
     @SneakyThrows
     protected static <T extends AocBase> List<String> read(Class<T> tClass, int taskNumber) {
-        return Files.readAllLines(Paths.get("/Users/mateusz.adamiak/workspace/advent-of-code/2022/src/main/resources/" + tClass.getSimpleName().toLowerCase(ENGLISH) + "_" + taskNumber + ".txt"));
+        return Files.readAllLines(Paths.get("./2022/src/main/resources/" + tClass.getSimpleName().toLowerCase(ENGLISH) + "_" + taskNumber + ".txt"));
     }
 
     protected static int _int(String s) {
