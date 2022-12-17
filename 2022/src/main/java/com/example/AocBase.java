@@ -28,4 +28,26 @@ public abstract class AocBase {
     protected static int _int(String s) {
         return Integer.parseInt(s);
     }
+
+    protected static int[][] _arri(List<String> l) {
+        int[][] arr = new int[l.size()][];
+        for (int i = 0; i < l.size(); i++) {
+            arr[i] = new int[l.get(i).length()];
+            for (int j = 0; j < l.get(i).length(); j++) {
+                arr[i][j] = _int(l.get(i).split("")[j]);
+            }
+        }
+        return arr;
+    }
+
+    protected static String[][] _arrs(List<String> l) {
+        String[][] arr = new String[l.size()][];
+        for (int i = 0; i < l.size(); i++) {
+            arr[i] = new String[l.get(i).length()];
+            for (int j = 0; j < l.get(i).length(); j++) {
+                arr[i][j] = l.get(i).split("")[j];
+            }
+        }
+        return arr;
+    }
 }
