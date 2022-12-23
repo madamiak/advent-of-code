@@ -2,6 +2,7 @@ package com.example;
 
 import lombok.SneakyThrows;
 
+import java.math.BigInteger;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
@@ -27,6 +28,10 @@ public abstract class AocBase {
 
     protected static int _int(String s) {
         return Integer.parseInt(s);
+    }
+
+    protected static BigInteger _bint(int i) {
+        return BigInteger.valueOf(i);
     }
 
     protected static int[][] _arri(List<String> l) {
