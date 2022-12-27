@@ -7,7 +7,7 @@ import java.util.*;
 public class Day13 extends AocBase {
 
     public static void main(String[] args) {
-        List<String> input = readFirst(Day13.class);
+        List<String> input = readInput(Day13.class);
         System.out.println(task1(input));
         System.out.println(task2(input));
     }

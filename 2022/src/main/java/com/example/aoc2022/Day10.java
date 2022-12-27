@@ -9,7 +9,7 @@ import java.util.Stack;
 public class Day10 extends AocBase {
 
     public static void main(String[] args) {
-        List<String> input = readFirst(Day10.class);
+        List<String> input = readInput(Day10.class);
         System.out.println(task1(input));
         System.out.println(task2(input));
     }

@@ -12,7 +12,7 @@ public class Day7 extends AocBase {
     private static final Tree fs = new Tree();
 
     public static void main(String[] args) {
-        List<String> input = readFirst(Day7.class);
+        List<String> input = readInput(Day7.class);
         System.out.println(task1(input));
         System.out.println(task2(input));
     }

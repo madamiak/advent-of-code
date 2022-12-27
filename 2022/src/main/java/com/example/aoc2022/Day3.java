@@ -9,7 +9,7 @@ import static java.util.stream.Collectors.toSet;
 public class Day3 extends AocBase {
 
     public static void main(String[] args) {
-        List<String> input = readFirst(Day3.class);
+        List<String> input = readInput(Day3.class);
         System.out.println(task1(input));
         System.out.println(task2(input));
     }

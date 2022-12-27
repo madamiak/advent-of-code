@@ -17,7 +17,7 @@ public class Day11 extends AocBase {
     private static Map<Integer, BigMonkey> bigMonkeys = new HashMap<>();
 
     public static void main(String[] args) {
-//        System.out.println(task1());
+        System.out.println(task1());
         System.out.println(task2());
     }
 
@@ -47,7 +47,7 @@ public class Day11 extends AocBase {
         return monkeys.values().stream().map(e -> e.inspectedCount).sorted(Comparator.reverseOrder()).limit(2).reduce(1, (x, y) -> x * y);
     }
 
-    private static BigInteger task2() { // 145356120 too low
+    private static BigInteger task2() {
         var m0 = new BigMonkey(List.of(96, 60, 68, 91, 83, 57, 85),     x -> x.multiply(_bint(2)),  x -> x.mod(_bint(17)).equals(BigInteger.ZERO), x -> throwItemTo(x, 2), x -> throwItemTo(x, 5));
         var m1 = new BigMonkey(List.of(75, 78, 68, 81, 73, 99),         x -> x.add(_bint(3)),       x -> x.mod(_bint(13)).equals(BigInteger.ZERO), x -> throwItemTo(x, 7), x -> throwItemTo(x, 4));
         var m2 = new BigMonkey(List.of(69, 86, 67, 55, 96, 69, 94, 85), x -> x.add(_bint(6)),       x -> x.mod(_bint(19)).equals(BigInteger.ZERO), x -> throwItemTo(x, 6), x -> throwItemTo(x, 5));

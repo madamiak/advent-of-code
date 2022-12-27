@@ -7,8 +7,8 @@ import java.util.List;
 public class Day2 extends AocBase {
 
     public static void main(String[] args) {
-        System.out.println(task1(readFirst(Day2.class)));
-        System.out.println(task2(readFirst(Day2.class)));
+        System.out.println(task1(readInput(Day2.class)));
+        System.out.println(task2(readInput(Day2.class)));
     }
 
     private static int task1(List<String> input) {

@@ -9,7 +9,7 @@ import java.util.PriorityQueue;
 public class Day1 extends AocBase {
 
     public static void main(String[] args) {
-        List<String> input = readFirst(Day1.class);
+        List<String> input = readInput(Day1.class);
         System.out.println(task1(input));
         System.out.println(task2(input));
     }

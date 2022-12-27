@@ -6,8 +6,8 @@ import java.util.List;
 
 public class Day4 extends AocBase {
     public static void main(String[] args) {
-        System.out.println(task1(readFirst(Day4.class)));
-        System.out.println(task2(readFirst(Day4.class)));
+        System.out.println(task1(readInput(Day4.class)));
+        System.out.println(task2(readInput(Day4.class)));
     }
 
     public static int task1(List<String> input) {
@@ -24,7 +24,7 @@ public class Day4 extends AocBase {
         return occs;
     }
 
-    public static int task2(List<String> input) { // 194 too low
+    public static int task2(List<String> input) {
         int occs = 0;
         for (String line : input) {
             String[] args = line.split(",");

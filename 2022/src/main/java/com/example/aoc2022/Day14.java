@@ -10,8 +10,8 @@ import static java.lang.Math.min;
 public class Day14 extends AocBase {
 
     public static void main(String[] args) {
-        List<String> input = readFirst(Day14.class);
-//        System.out.println(task1(input));
+        List<String> input = readInput(Day14.class);
+        System.out.println(task1(input));
         System.out.println(task2(input));
     }
 

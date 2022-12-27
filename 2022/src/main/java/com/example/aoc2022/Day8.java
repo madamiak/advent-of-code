@@ -7,7 +7,7 @@ import java.util.List;
 public class Day8 extends AocBase {
 
     public static void main(String[] args) {
-        List<String> input = readFirst(Day8.class);
+        List<String> input = readInput(Day8.class);
         System.out.println(task1(input));
         System.out.println(task2(input));
     }
@@ -32,7 +32,7 @@ public class Day8 extends AocBase {
                 }
             }
         }
-        return max; // 180 too low
+        return max;
     }
 
     private static void walkRight(int[][][] trees) {

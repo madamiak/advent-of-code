@@ -4,7 +4,6 @@ import com.example.AocBase;
 
 import java.util.*;
 import java.util.function.Function;
-import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.toMap;
 
@@ -16,7 +15,7 @@ public class Day12 extends AocBase {
             new P(0, -1));
 
     public static void main(String[] args) {
-        List<String> input = readFirst(Day12.class);
+        List<String> input = readInput(Day12.class);
         System.out.println(task1(input));
         System.out.println(task2(input));
     }

@@ -18,7 +18,7 @@ public class Day9 extends AocBase {
     );
 
     public static void main(String[] args) {
-        List<String> input = readFirst(Day9.class);
+        List<String> input = readInput(Day9.class);
         System.out.println(task1(input));
         System.out.println(task2(input));
     }

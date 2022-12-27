@@ -7,8 +7,8 @@ import java.util.stream.Collectors;
 
 public class Day5 extends AocBase {
     public static void main(String[] args) {
-        System.out.println(task1(readFirst(Day5.class)));
-        System.out.println(task2(readFirst(Day5.class)));
+        System.out.println(task1(readInput(Day5.class)));
+        System.out.println(task2(readInput(Day5.class)));
     }
 
     public static String task1(List<String> input) {
